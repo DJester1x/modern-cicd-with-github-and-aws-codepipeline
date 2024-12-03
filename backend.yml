@@ -131,10 +131,10 @@ Resources:
     Type: "AWS::SSM::Parameter"
     Properties:
       Name: !Sub "/hotelapp/${Environment}/url"
-      Description: "Hotel app URI"
+      Description: "Hotel app URI1"
       Type: "String"
       Value: !Sub "https://${AppRunnerService.ServiceUrl}"
-      
+
 Outputs:
   DynamoDBTableName:
     Description: "Name of the DynamoDB Table"
